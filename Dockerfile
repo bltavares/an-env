@@ -11,7 +11,6 @@ RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-sel
 RUN apt-get install -y oracle-java7-installer
 RUN apt-get install -y build-essential python-dev python-pip scons
 RUN apt-get install -y nodejs
-RUN apt-get upgrade -y
 RUN pip install --upgrade pip
 
 CMD /bin/true
