@@ -2,7 +2,7 @@ FROM ubuntu:12.04
 
 MAINTAINER Bruno Tavares
 
-RUN apt-get install -y software-properties-common python-software-properties
+RUN apt-get install -y --force-yes software-properties-common python-software-properties
 RUN add-apt-repository -y ppa:chris-lea/node.js
 RUN add-apt-repository -y ppa:webupd8team/java
 RUN apt-get update
